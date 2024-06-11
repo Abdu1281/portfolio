@@ -1,0 +1,275 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+/* header og footer */
+header {
+    background-color: transparent;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 2.5em;
+    position: relative;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+}
+
+main {
+    padding: 2em;
+    position: relative;
+}
+
+/* style for sections */
+section {
+    margin-bottom: 2em;
+}
+
+section h2 {
+    background-color: rgb(98, 98, 98);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+section p {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* burger menu */
+.burger-menu {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.burger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.nav-links {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    padding-top: 50px;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav-links ul li {
+    margin: 20px 0;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+/* style for menu */
+.burger-menu.change .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger-menu.change .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.change .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-links.show {
+    display: block;
+}
+.grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4rem;
+    margin-left: 5rem;
+    margin-right: 2rem;
+    gap: 2rem;
+  }
+  
+  .col_1 {
+    grid-column: 1;
+  }
+  
+  .col_2 {
+    grid-column: 2;
+  }
+  
+  .col_2_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .grid_1_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    gap: 2rem;
+  }
+  
+  .om_col_1 {
+    color: #111111;
+  }
+  
+  .om_col_2 {
+    grid-column: 2;
+    grid-row: 1;
+    color: #111111;
+  }
+  
+  .om_col_3 {
+    color: #111111;
+  }
+  
+  .om_col_3 p {
+  font-size: 100%;
+  line-height: 100%;
+    color: #111111;
+  }
+  
+  .om_col_4 {
+    color: #111111;
+  }
+  
+  .om_col_5 {
+    color: #111111;
+  }
+  
+  .om_col_5 p {
+    font-size: 100%;
+    line-height: 100%;
+    color: #111111;
+  }
+  .portraet {
+    display: block;
+    height: auto;
+    width: 75%;
+    border: 0.5rem solid white;
+  }
+  /*  hvid box */
+.about-me-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* baggrund */
+
+.wrapper {
+  animation: scroll 700s linear infinite;
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"),
+    #111111;
+  color: #eee;
+  height: 100%;
+  min-width: 360px;
+  width: 100%;
+  display: fixed;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  z-index: -11;
+}
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -400%;
+  }
+}
+
+/* Tilbagefald, hvis operativsystemet foretrækker reduceret bevægelse */
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 800s linear infinite;
+  }
+}
+
+@media (min-width: 670px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+
+/* responsivitet for about side */
+
+@media only screen and (max-width: 768px) {
+  .grid_1_2 {
+    grid-template-columns: 1fr;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .om_col_1,
+  .om_col_2,
+  .om_col_3,
+  .om_col_4,
+  .om_col_5 {
+    grid-column: auto;
+    grid-row: auto;
+    text-align: center;
+  }
+
+  .portraet {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Responsivitet for større skærme */
+@media only screen and (min-width: 1024px) {
+  .grid_1_2 {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+
+  .om_col_1,
+  .om_col_2,
+  .om_col_3,
+  .om_col_4,
+  .om_col_5 {
+    text-align: left;
+  }
+}

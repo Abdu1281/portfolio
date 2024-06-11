@@ -1,0 +1,127 @@
+
+.section.grid_2-1 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1em;
+      }
+.grid_1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+      }
+.link {
+font-size: xx-large;
+}
+.col_2 {
+        gap: 1em;
+      }
+.col_1 {
+        max-width: 65ch;
+      }
+.section.grid_1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+      }
+.col_3 {
+        display: grid;
+        grid-column: 2;
+        grid-row: 2;
+      }
+.col_4 {
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+      }
+
+.grid_1-1-1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 0;
+        margin: 0;
+        gap: 0.2em;
+      }
+
+.img1 {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+      }
+.img2 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+.img3 {
+      grid-column: 4;
+      grid-row: 1;
+    }
+.img4 {
+      grid-column: 3 / span 2;
+      grid-row: 2;
+    }
+.img5 {
+      grid-column: 1;
+      grid-row: 3;
+    }
+.img6 {
+      grid-column: span 3;
+      grid-row: 3;
+    }
+.grid_5-3 {
+      display: grid;
+      grid-template-columns: 5fr 3fr;
+      gap: 1em;
+    }
+.windows {
+      grid-column: 1;
+      grid-row: 1;
+    }
+.mac_billede {
+      grid-column: 2;
+      padding-top: 40px;
+    }
+.grid_2-3 {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      gap: 1em;
+    }
+.grid_3-2 {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 1em;
+    }
+.windows_1 {
+      grid-column: 1;
+      grid-row: 1;
+      padding-top: 40px;
+    }
+.windows_2 {
+      grid-column: 2;
+      grid-row: 1;
+    }
+.tablet_billede1 {
+      grid-column: 2;
+      grid-row: 1;
+    }
+.tablet_2 {
+      grid-column: 1;
+      grid-row: 1;
+    }
+.grid_1-1-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1em;
+    }
+.flex_container {
+      display: flex;
+      flex-direction: column;
+    }
+.flex-item {
+      margin-bottom: 20px;
+    }
+.flex-item h2,
+.flec-item h3 {
+      margin: 0;
+    }
+.flex-item:last-child {
+      margin-top: auto;
+    }
