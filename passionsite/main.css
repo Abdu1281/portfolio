@@ -53,6 +53,11 @@
    margin-left: 15%;
   }
   
+  iframe {
+    width: 100%;
+    height: 200%;
+  }
+
   .col img {
     width: 40%;
     margin-top: 5px;
