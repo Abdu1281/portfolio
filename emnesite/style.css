@@ -1,0 +1,93 @@
+
+body {
+  font-size: 14px; 
+  padding-left: 10%;
+  padding-right: 10%;
+  min-height: 100vh;
+  margin: 0; 
+  position: relative; 
+  overflow-x: hidden; 
+}
+img {
+width: 100%;
+height: auto;
+}
+h1 {
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: x-large;
+color: #000000;
+}
+h2 {
+font-family: 'Times New Roman', Times, serif;
+font-size: large;
+color: #493833;
+}
+p {
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-style: normal;
+color: #757575;
+}
+.ch65 {
+max-width: 65ch;
+}
+
+footer {
+background-color: #6c6c6c;
+padding: 10px;
+text-align: center;
+width: auto;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  .topnav {
+    overflow: hidden;
+    background-color: #B3B3B3;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    float: left;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a.icon {
+    float: right;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    color: white;
+  }
+
+
+  .animated-background {
+    background: linear-gradient(-45deg, #55546f65, #a6050522, #ef911549, #5ce6123d);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.content {
+    position: relative;
+    z-index: 1;
+}

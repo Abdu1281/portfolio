@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Spil</title>
+</head>
+<body>
+    <header>
+        <div class="mobile-container">
+            <div class="topnav">
+              <div id="myLinks">
+                <a href="assets.html">Assets</a>
+                <a href="grafik.html">Grafik</a>
+                <a href="spil.html">Spil</a>
+                <a href="teknik.html">Teknik</a>
+                <a href="index.html">Index</a>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>    
+            </div>
+            
+            <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>   
+    </header> 
+    <div id="menu">
+      <h1>Vegetable Ninja</h1>
+      <button id="playBtn">Play Game</button>
+  </div>
+  
+  <div id="gameArea" class="hidden">
+      <audio id="backgroundMusic" loop>
+          <source src="lyde/baggrundsmusik.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="fruitSound">
+          <source src="lyde/frugt.wav" type="audio/mpeg">
+      </audio>
+      <audio id="bombSound">
+          <source src="lyde/bombe.wav" type="audio/mpeg">
+      </audio>
+      <audio id="loseLifeSound">
+          <source src="lyde/lose-life.wav" type="audio/mpeg">
+      </audio>
+      <audio id="gameOverSound">
+          <source src="lyde/game-over.wav" type="audio/mpeg">
+      </audio>
+      <audio id="winSound">
+          <source src="lyde/game-win.wav" type="audio/mpeg">
+      </audio>
+  
+      <div id="score">Score: 0</div>
+      <div id="healthOverlay">
+          <div id="health">
+              <span class="heart"><img src="billeder/fullheart.png" alt="Full Heart" class="heartImage"></span>
+              <span class="heart"><img src="billeder/fullheart.png" alt="Full Heart" class="heartImage"></span>
+              <span class="heart"><img src="billeder/fullheart.png" alt="Full Heart" class="heartImage"></span>
+          </div>
+      </div>
+
+      <div class="game-container">
+        <div class="timer">
+            <h2>Time Left:</h2>
+            <div id="display">01:30</div> 
+        </div>
+
+<div id="gameOverScreen" class="hidden"> 
+    <img id="gameOverImage" src="billeder/gameover.png" alt=""> 
+    <button id="restartGameOverBtn" onclick="restartGame()" style="display: none;">Restart Game</button> 
+</div> 
+<div id="gameWonScreen" class="hidden"> 
+    <img id="gameWonImage" src="billeder/gamewon.png" alt=""> 
+    <button id="restartGameWonBtn" onclick="restartGame()" style="display: none;">Restart Game</button> 
+</div>
+    
+    
+</div>
+</div>
+
+
+  <script src="scripts.js"></script>
+
+</body>
+</html>
