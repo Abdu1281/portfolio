@@ -1,2 +1,2 @@
 # portfolio
-portfolio eksamen KEA vinter 24
+portfolio eksamen KEA sommer 24
